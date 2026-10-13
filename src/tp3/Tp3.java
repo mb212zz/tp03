@@ -10,14 +10,21 @@ package tp3;
  */
 import java.util.Scanner;
 public class Tp3 {
+    /*QUESTION 2
     public static int carre(int a) {
         return a*a;
     }
     public static int cube(int a) {
         return a*a*a;
+    }*/
+    public static boolean Pair(int n) {
+        if (n % 2 == 0) {
+            return true;
+        }
+        return false;
     }
-
     public static void main(String[] args) {
+        /*QUESTION 2
         Scanner sc = new Scanner(System.in);
         int a = 0; 
         int b = 0;
@@ -34,8 +41,20 @@ public class Tp3 {
             resultat = cube(a);
             System.out.print("Le résultat est : " + resultat);
         }
+    }*/
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Entrez un nombre : ");
+        int n = sc.nextInt();
+        if (Pair(n)){
+            System.out.println("Le nombre est pair.");
+        } 
+        else{
+            System.out.println("Le nombre est impair.");
+        }
     }
 }
+        
+
         
 
 
